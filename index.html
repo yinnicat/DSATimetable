@@ -22,79 +22,79 @@
     const { useState } = React;
 
     const schedules = {
-      // Ahmed (was Molisha) — colourful visual calendar
+      // Ahmed 
       "Ahmed": {
         color: "#f59e0b",
         classes: [
-          { day: "Monday",    start: "08:00", end: "12:00", name: "COMP 301 LAB (IO LAB)" },
-          { day: "Monday",    start: "11:00", end: "13:30", name: "GEM 232 LEC (Block 12/055-006)" },
-          { day: "Monday",    start: "14:00", end: "17:30", name: "COMP 321 LAB (Block 115/022)" },
-          { day: "Tuesday",   start: "09:00", end: "10:50", name: "COMP 301 LEC (Block 125/085-006)" },
-          { day: "Tuesday",   start: "12:00", end: "13:50", name: "COMP 322 LEC (Bio seminar)" },
-          { day: "Tuesday",   start: "15:00", end: "17:50", name: "COMP 302 LAB (Block 115/024)" },
+          { day: "Monday",    start: "08:00", end: "11:00", name: "COMP 301 LAB (IO LAB)" },
+          { day: "Monday",    start: "11:00", end: "13:00", name: "GEM 232 LEC (Block 12/055-006)" },
+          { day: "Monday",    start: "13:00", end: "16:00", name: "COMP 321 LAB (Block 115/022)" },
+          { day: "Tuesday",   start: "08:00", end: "10:00", name: "COMP 301 LEC (Block 125/085-006)" },
+          { day: "Tuesday",   start: "12:00", end: "14:00", name: "COMP 322 LEC (Bio seminar)" },
+          { day: "Tuesday",   start: "15:00", end: "18:00", name: "COMP 302 LAB (Block 115/024)" },
           { day: "Tuesday",   start: "18:00", end: "19:00", name: "CHCL 102 (Block 115/024)" },
-          { day: "Wednesday", start: "08:00", end: "11:50", name: "COMP 322 LAB (Block 115/001)" },
-          { day: "Wednesday", start: "14:00", end: "17:50", name: "COMP 302 LEC (Block 115/024)" },
-          { day: "Wednesday", start: "16:00", end: "17:50", name: "COMP 321 LEC (Bio seminar)" },
-          { day: "Thursday",  start: "08:00", end: "09:50", name: "COMP 302 LEC (Bio semp lab)" },
+          { day: "Wednesday", start: "08:00", end: "11:00", name: "COMP 322 LAB (Block 115/001)" },
+          { day: "Wednesday", start: "14:00", end: "16:00", name: "COMP 302 LEC (Block 115/024)" },
+          { day: "Wednesday", start: "16:00", end: "18:00", name: "COMP 321 LEC (Bio seminar)" },
+          { day: "Thursday",  start: "08:00", end: "10:00", name: "COMP 302 LEC (Bio semp lab)" },
           { day: "Thursday",  start: "18:00", end: "19:00", name: "CHCL 102 (Block 115/024)" },
         ]
       },
 
-      // Senatla — dark text list (GEME 323 + COMP 341)
+      // Senatla 
       "Senatla": {
         color: "#22c55e",
         classes: [
-          { day: "Monday",    start: "08:00", end: "10:50", name: "COMP 301 LAB" },
-          { day: "Monday",    start: "11:00", end: "12:50", name: "GEME 323 LEC" },
-          { day: "Monday",    start: "13:00", end: "15:50", name: "COMP 321 LAB" },
-          { day: "Tuesday",   start: "08:00", end: "09:50", name: "COMP 301 LEC" },
-          { day: "Tuesday",   start: "12:00", end: "13:50", name: "COMP 322 LEC" },
-          { day: "Tuesday",   start: "15:00", end: "17:50", name: "COMP 302 LAB" },
-          { day: "Wednesday", start: "08:00", end: "10:50", name: "COMP 322 LAB" },
-          { day: "Wednesday", start: "14:00", end: "15:50", name: "COMP 352 LEC" },
-          { day: "Wednesday", start: "16:00", end: "17:50", name: "COMP 321 LEC" },
-          { day: "Thursday",  start: "08:00", end: "09:50", name: "COMP 302 LEC" },
-          { day: "Thursday",  start: "13:00", end: "14:50", name: "COMP 341 LEC" },
-          { day: "Friday",    start: "12:00", end: "14:50", name: "COMP 341 LAB" },
+          { day: "Monday",    start: "08:00", end: "11:00", name: "COMP 301 LAB" },
+          { day: "Monday",    start: "11:00", end: "13:00", name: "GEME 323 LEC" },
+          { day: "Monday",    start: "13:00", end: "16:00", name: "COMP 321 LAB" },
+          { day: "Tuesday",   start: "08:00", end: "10:00", name: "COMP 301 LEC" },
+          { day: "Tuesday",   start: "12:00", end: "14:00", name: "COMP 322 LEC" },
+          { day: "Tuesday",   start: "15:00", end: "18:00", name: "COMP 302 LAB" },
+          { day: "Wednesday", start: "08:00", end: "11:00", name: "COMP 322 LAB" },
+          { day: "Wednesday", start: "14:00", end: "16:00", name: "COMP 352 LEC" },
+          { day: "Wednesday", start: "16:00", end: "18:00", name: "COMP 321 LEC" },
+          { day: "Thursday",  start: "08:00", end: "10:00", name: "COMP 302 LEC" },
+          { day: "Thursday",  start: "13:00", end: "15:00", name: "COMP 341 LEC" },
+          { day: "Friday",    start: "12:00", end: "15:00", name: "COMP 341 LAB" },
         ]
       },
 
-      // Abygail — Excel spreadsheet grid
+      // Abygail 
       "Abygail": {
         color: "#3b82f6",
         classes: [
-          { day: "Monday",    start: "08:00", end: "10:50", name: "COMP 301 LAB (3D LAB)" },
-          { day: "Monday",    start: "11:00", end: "12:50", name: "GEME 323 LEC (125/005-006)" },
-          { day: "Monday",    start: "14:00", end: "15:50", name: "COMP 321 LAB (115/002)" },
-          { day: "Tuesday",   start: "08:00", end: "09:50", name: "COMP 301 LEC (125/005-006)" },
-          { day: "Tuesday",   start: "12:00", end: "13:50", name: "COMP 322 LEC (Bio SEM)" },
-          { day: "Tuesday",   start: "16:00", end: "17:50", name: "COMP 302 LAB (115/001)" },
-          { day: "Wednesday", start: "08:00", end: "09:50", name: "COMP 322 LAB (115/001)" },
-          { day: "Wednesday", start: "14:00", end: "15:50", name: "COMP 352 LEC (Bio SEM)" },
-          { day: "Wednesday", start: "16:00", end: "17:50", name: "COMP 321 LEC (Bio SEM)" },
-          { day: "Thursday",  start: "08:00", end: "09:50", name: "COMP 302 LEC (Bio COMP LAB)" },
+          { day: "Monday",    start: "08:00", end: "11:00", name: "COMP 301 LAB (3D LAB)" },
+          { day: "Monday",    start: "11:00", end: "13:00", name: "GEME 323 LEC (125/005-006)" },
+          { day: "Monday",    start: "13:00", end: "16:00", name: "COMP 321 LAB (115/002)" },
+          { day: "Tuesday",   start: "08:00", end: "10:00", name: "COMP 301 LEC (125/005-006)" },
+          { day: "Tuesday",   start: "12:00", end: "14:00", name: "COMP 322 LEC (Bio SEM)" },
+          { day: "Tuesday",   start: "15:00", end: "16:00", name: "COMP 302 LAB (115/001)" },
+          { day: "Wednesday", start: "08:00", end: "11:0", name: "COMP 322 LAB (115/001)" },
+          { day: "Wednesday", start: "14:00", end: "16:00", name: "COMP 352 LEC (Bio SEM)" },
+          { day: "Wednesday", start: "16:00", end: "18:00", name: "COMP 321 LEC (Bio SEM)" },
+          { day: "Thursday",  start: "08:00", end: "10:00", name: "COMP 302 LEC (Bio COMP LAB)" },
         ]
       },
 
-      // Onneile — dark grid (COMP 232 + COMP 352 optional)
+      // Onneile
       "Onneile": {
         color: "#ec4899",
         classes: [
-          { day: "Monday",    start: "11:00", end: "11:50", name: "GEME 323 LEC" },
-          { day: "Monday",    start: "13:00", end: "15:50", name: "COMP 321 LAB" },
-          { day: "Tuesday",   start: "12:00", end: "12:50", name: "COMP 322 LEC" },
-          { day: "Tuesday",   start: "15:00", end: "17:50", name: "COMP 302 LAB" },
-          { day: "Wednesday", start: "08:00", end: "10:50", name: "COMP 322 LAB" },
-          { day: "Wednesday", start: "10:00", end: "10:50", name: "COMP 232 LEC" },
-          { day: "Wednesday", start: "14:00", end: "15:50", name: "COMP 352 LEC (Optional)" },
-          { day: "Wednesday", start: "16:00", end: "16:50", name: "COMP 321 LEC" },
-          { day: "Thursday",  start: "08:00", end: "09:50", name: "COMP 302 LEC" },
-          { day: "Thursday",  start: "12:00", end: "13:50", name: "COMP 232 LAB" },
+          { day: "Monday",    start: "11:00", end: "13:00", name: "GEME 323 LEC" },
+          { day: "Monday",    start: "13:00", end: "16:00", name: "COMP 321 LAB" },
+          { day: "Tuesday",   start: "12:00", end: "14:00", name: "COMP 322 LEC" },
+          { day: "Tuesday",   start: "15:00", end: "18:00", name: "COMP 302 LAB" },
+          { day: "Wednesday", start: "08:00", end: "11:00", name: "COMP 322 LAB" },
+          { day: "Wednesday", start: "10:00", end: "12:00", name: "COMP 232 LEC" },
+          { day: "Wednesday", start: "14:00", end: "16:00", name: "COMP 352 LEC (Optional)" },
+          { day: "Wednesday", start: "16:00", end: "18:00", name: "COMP 321 LEC" },
+          { day: "Thursday",  start: "08:00", end: "10:00", name: "COMP 302 LEC" },
+          { day: "Thursday",  start: "12:00", end: "15:00", name: "COMP 232 LAB" },
         ]
       },
 
-      // Motheo — INFS + COMP 232 LAB
+      // Motheo
       "Motheo": {
         color: "#8b5cf6",
         classes: [
@@ -113,12 +113,13 @@
         ]
       },
 
-      // Sean — COMP 301 + INFS 302
+      // Sean 
       "Sean": {
         color: "#06b6d4",
         classes: [
           { day: "Monday",    start: "08:00", end: "11:00", name: "COMP 301 LAB (3D LAB)" },
           { day: "Monday",    start: "11:00", end: "12:00", name: "GEME 323 LEC (125/005-006)" },
+          { day: "Monday",    start: "12:00", end: "15:00", name: "workout" },
           { day: "Monday",    start: "16:00", end: "18:00", name: "INFS 302 LAB (115/001)" },
           { day: "Tuesday",   start: "08:00", end: "10:00", name: "COMP 301 LEC (125/005-006)" },
           { day: "Tuesday",   start: "12:00", end: "14:00", name: "COMP 322 LEC (Bio Sem)" },
@@ -130,7 +131,7 @@
         ]
       },
 
-      // Malau — new addition
+      // Malau 
       "Malau": {
         color: "#f97316",
         classes: [
@@ -140,7 +141,7 @@
           { day: "Tuesday",   start: "12:00", end: "14:00", name: "COMP 322 LEC" },
           { day: "Tuesday",   start: "15:00", end: "18:00", name: "COMP 302 LAB" },
           { day: "Wednesday", start: "08:00", end: "11:00", name: "COMP 322 LAB" },
-          { day: "Wednesday", start: "10:00", end: "12:00", name: "COMP 232 LEC" },
+          { day: "Wednesday", start: "11:00", end: "12:00", name: "COMP 232 LEC" },
           { day: "Wednesday", start: "16:00", end: "18:00", name: "COMP 321 LEC" },
           { day: "Thursday",  start: "08:00", end: "10:00", name: "COMP 302 LEC" },
           { day: "Thursday",  start: "12:00", end: "13:00", name: "COMP 232 LAB" },
@@ -151,7 +152,7 @@
 
     const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
     const timeSlots = [];
-    for (let h = 8; h <= 18; h++) {
+    for (let h = 8; h <= 19; h++) {
       timeSlots.push(`${h.toString().padStart(2, '0')}:00`);
     }
 
